@@ -1,0 +1,46 @@
+body{
+    
+    background-image: url(https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148881320.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px ;
+    text-align: center;
+    border:2px solid rgb(245, 231, 206);
+    border-radius: 20px;
+    overflow:auto ;
+     width:500px;
+     margin-top:45px;
+   
+     margin-left: 600px;
+    
+    
+}
+
+.head{
+    color:blueviolet;
+    font-family: cursive;
+    font-size: 3rem;
+}
+.formdesign{
+    font-size: 20px;
+}
+.formdesign input, textarea{
+    width: 60%;
+     margin: 10px; 
+    padding: 10px; 
+    border: 2px solid violet;
+    border-radius:20px ;
+    font-size: 15px;
+}
+.formerror{
+    color:red;
+    font-size: 15px;
+}
+.btn{
+    height: 50px;
+    width:150px;
+    border-radius: 10px;
+    font-size: 20px;
+   border: 2px solid violet;
+   color:blueviolet;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" ></script>
+</head>
+<body>
+    <div class="border">
+
+    
+    <h1 class="head">Sign Up</h1>
+    <form>
+        <div class="formdesign" >
+             <b><span id="nameError" class="formerror"></span></b> 
+
+            <input  placeholder="Enter UserName" type="text" name="name" id="name" onkeyup="validateName()">
+            
+             
+        </div>
+
+        <div class="formdesign">
+            <b><span id="emailError" class="formerror"></span></b>
+            <input placeholder="Enter Email" type="text" name="email" id="email" onkeyup="validateEmail()">
+            
+            
+        </div>
+        <div class="formdesign">
+            <b><span id="passError" class="formerror"></span></b>
+       
+            <input placeholder="Password" type="password" name="pass" id="pass" onkeyup="validatePass()">
+            
+        </div>
+        <div class="formdesign">
+            <b><span id="mobileError" class="formerror"></span></b>
+       
+            <input placeholder="Enter Mobile Number" type="text" name="mobile" id="mobile" onkeyup="validateMobile()">
+           
+        </div>
+        <div class="formdesign">
+            <b><span id="desError" class="formerror"></span></b>
+        
+            <textarea placeholder=" Description" class="text-area" rows="5" cols="80" id="description" onkeyup="validateDes()"></textarea>
+            
+        </div>
+        
+        <input type="submit" class="btn" value="Register" onclick="return validateForm()">
+        
+        <br><b><span id="submitError" class="formerror"></span></b>
+    
+    </form>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
