@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     
     background-image: url(https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148881320.jpg);
@@ -8,13 +15,9 @@ body{
     border:2px solid rgb(245, 231, 206);
     border-radius: 20px;
     overflow:auto ;
-     width:500px;
-     margin-top:45px;
-   
-     margin-left: 600px;
-    
-    
-}
+    margin:45px auto;
+    max-width:500px;
+    }
 
 .head{
     color:blueviolet;
@@ -25,8 +28,9 @@ body{
     font-size: 20px;
 }
 .formdesign input, textarea{
-    width: 60%;
-     margin: 10px; 
+    width: 100%;
+    max-width:400px;
+     margin: 10px auto; 
     padding: 10px; 
     border: 2px solid violet;
     border-radius:20px ;
@@ -43,4 +47,29 @@ body{
     font-size: 20px;
    border: 2px solid violet;
    color:blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-bottom: 40px; 
+        margin-top: 25px;
+        border-radius: 10px;
+    }
+
+    .formdesign input,
+    .formdesign textarea {
+    width: 100%; 
+    max-width: 200px; 
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px solid violet;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+    .btn {
+        height: 40px;
+        width: 120px; 
+        font-size: 18px; 
+    }
 }
